@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sourceRoot": "/home/runner/work/msankhala.github.com/msankhala.github.com",
+	"sources": [
+		"assets/sass/style.scss"
+	],
+	"sourcesContent": [
+		".background {\n  transform: none;\n  filter: none;\n  background-position: initial;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,WAAW,AAAC,CACV,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,IAAI,CACZ,mBAAmB,CAAE,OAAO,CAC7B"
+}
