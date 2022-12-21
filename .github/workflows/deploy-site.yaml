@@ -25,7 +25,7 @@ jobs:
 
     # build website
     - name: Build
-      run: hugo --theme taho --minify
+      run: hugo --theme toha --minify
 
     # push the generated content into the `gh-pages` branch.
     - name: Deploy
