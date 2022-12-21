@@ -11,39 +11,43 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: Drupal
+  logo: /images/sections/skills/drupal.png
+  summary: "Capable of developing, deploying and managing Drupal application. I have written custom Drupal modules, themes, and contributed to the Drupal community. I have also worked Acquia Cloud, Pantheon, and Platform.sh. Capable of writing custom Drupal distribution."
+  url: "https://drupal.org/"
 
-- name: Go Development
+- name: Javascript
   logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+  summary: "Using JS since ES5. I understand Javascript prototypal inheritance quite well. Using Javascript as main programming language for most of my projects. Capable of writing NodeJS, ReactJS, VueJS, ExpressJS, etc."
+  # url: "https://golang.org/"
+
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "I have written some of the CLI tools, deployment scripts, and automation scripts in Python. Capable of writing both functional and object-oriented Python code. Experienced with Django, Flask, etc."
 
 - name: Cloud Computing
   logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+  summary: "Worked with most of the major clouds such as GCP, AWS, Azure, Alibaba Cloud, DigitalOcean, Linode, etc. Capable of writing Terraform, Ansible, Cloudformation etc. Experienced with Kubernetes, Docker, etc."
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+  summary: "Comfortable working with Docker. Experienced with writing Dockerfiles, docker-compose, docker registry etc. I use docker based local development tools. Write some of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
   url: "https://www.docker.com/"
 
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
+- name: Blockchain
+  logo: /images/sections/skills/ethereum.png
+  summary: "Capable of writing smart contract in Solidity and deploying it to Ethereum. Experienced working with blockchain tools like Truffle, Remix, Ganache, Geth and Besu. Comfortable working with wallet like Metamask."
+  url: "https://remix.ethereum.org/"
 
 - name: Linux
   logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  summary: "Using linux as main operating system for most of my servers. Capable of writing bash/shell scripts. Comfortable with often used Linux commands such as grep, awk, sed, find, xargs etc."
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  summary: "Experienced with git-based development. Comformable working with almost all the git hosting services such as GitHub, GitLab, BitBucket, Azure repo, AWS Code Commit etc. Also, experienced with git hooks, git submodules, git flow etc"
   url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+- name: Rust
+  logo: /images/sections/skills/rust.png
+  summary: "Know basic Rust programming. Relatively new to Rust and still a lot to learn."
