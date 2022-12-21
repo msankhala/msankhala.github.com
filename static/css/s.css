@@ -1,0 +1,47 @@
+/* html {
+  background:rgb(35,35,35);
+}
+figure, figure * {
+  position:absolute;
+}
+figure {
+  width:600px;
+  height:400px;
+  top:50%;
+  left:50%;
+  margin:-230px 0 0 -300px;
+  border-radius:5px;
+  background:url('../images/bw1.jpg');
+  -webkit-box-shadow:0 1px 5px rgb(0,0,0);
+}
+figcaption {
+  bottom:10%;
+  left:7%;
+  font:italic 1.1em georgia;
+  color:#fff;
+  text-shadow:0 1px 1px rgb(0,0,0);
+}
+img {
+  z-index:1;
+  border-radius:5px;
+  -webkit-mask-image:-webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0)),
+                     -webkit-linear-gradient(0, rgb(0,0,0), rgb(0,0,0));
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-size:10% 100%;
+  -webkit-mask-position:0 0, 60px 0, 120px 0, 180px 0, 240px 0,
+                        300px 0, 360px 0, 420px 0, 480px 0, 540px 0;
+  -webkit-transition:-webkit-mask-size .8s cubic-bezier(0,0,.4,1),
+                     opacity .8s linear;
+}
+img:hover {
+  -webkit-mask-size:0 100%;
+  opacity:0;
+} */
