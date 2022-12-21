@@ -6,59 +6,64 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: Srijan Technologies PVT LTD | A Material + Company
+    url: "https://srijan.net/"
+    location: Delhi, India
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: Srijan is a global engineering firm that builds transformative digital paths to better futures for Fortune 500 enterprises to nonprofits all over the world. We have championed open-source technologies over the last two decades, bringing advanced engineering capabilities and agile practices to some of the biggest names across media, entertainment, education, travel, hospitality, telecommunications and other industries.
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
+  - designation: Senior Solution Architect
+    start: Oct 2021
+
+  - designation: Technical Solution Architect
+    start: April 2019
+    end: Oct 2021
+
+  - designation: Technical Lead
+    start: April 2017
+    end: April 2019
+
+  - designation: Full Stack Developer
+    start: Jun 2012
+    end: April 2017
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
-
-  - designation: Junior Software Engineer
-    start: Nov 2017
-    end: Oct 2019
-    responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
+    # responsibilities:
+    # - Design and develop XYZ tool for ABC task
+    # - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
+    # - Lead backend team.
 
 - company:
-    name: PreExample Co.
-    url: "https://www.example.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Business Integration Software Ltd.
+    url: "https://www.softwarehouse.co/"
+    location: Bikaner
+    # company overview
+    overview: Business Integration Software (BIS) registered in England (UK) is industry-leading specialist in the field of Product and Research and Development.BIS have a number of facilities worldwide and have an offshore software development center in India..
   positions:
   - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+    start: May 2011
+    end: Aug 2011
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Developed online testplus software.
+    - Develop the backend of the applicaiton.
+    - Develop the frontend of the applicaiton.
 
-- company:
-    name: Intern Counting Company (ICC).
-    url: "https://www.example.com"
-    location: Intern Land
-    overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
-  positions:
-  - designation: Intern
-    start: Jun 2015
-    end: Jan 2016
-    responsibilities:
-    - Count lost of interns.
-    - Count more interns.
-    - Count me as an intern.
+# - company:
+#     name: Intern Counting Company (ICC).
+#     url: "https://www.example.com"
+#     location: Intern Land
+#     overview: Intern counting Company (ICC) is responsible for counting worldwide intern Engineers.
+#   positions:
+#   - designation: Intern
+#     start: Jun 2015
+#     end: Jan 2016
+#     responsibilities:
+#     - Count lost of interns.
+#     - Count more interns.
+#     - Count me as an intern.
