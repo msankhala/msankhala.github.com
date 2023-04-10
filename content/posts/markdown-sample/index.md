@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Markdown Samples"
 date: 2020-06-08T08:06:25+06:00
 description: Markdown rendering samples
@@ -165,7 +165,7 @@ Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
 
 Block math:
 $$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$
 
 ---
@@ -173,4 +173,4 @@ $$
 ## Emoji Rendering
 
 <p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
-<br>
+<br> -->
