@@ -8,7 +8,7 @@ description: How to restore tmux lost session if you have lost your tmux session
 #     identifier: rich-content
 #     parent: sub-category
 #     weight: 10
-# hero: images/forest.jpg
+hero: images/tmux-panes.png
 tags: ["tmux", "terminal"]
 categories: ["Basic"]
 ---
