@@ -15,4 +15,6 @@ categories: ["Basic"]
 
 In this post, I will show you how to write custom views filter plugin to filter based on user zipcode.
 
+## Just code no BS
+
 {{< gist msankhala 532af1b40945a88ef7933933b46868f3 >}}
