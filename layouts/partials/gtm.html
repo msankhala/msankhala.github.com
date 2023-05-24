@@ -1,20 +1,68 @@
 {{ if .Site.Params.gtm.enable }}
   {{ if not (in (.Site.BaseURL | string) "localhost") }}
+    <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <!-- Google Tag Manager -->
     <!-- create dataLayer -->
     <script>
-    <!-- OPTIONAL dataLayer -->
-      var dataLayer = window.dataLayer = window.dataLayer || [];
+      var dataLayer = (window.dataLayer = window.dataLayer || []);
       dataLayer.push({
-        page:'{{ .Title }}',
-        categories:'Your dataLayer'
+        {{- if .ExpiryDate}}
+          'pageExpiryDate': '{{ .ExpiryDate.format  "01-02-2006"  }}',
+        {{- end }}
+        {{- if .PublishDate}}
+          'publishDate': '{{ .PublishDate.Format "01-02-2006" }}',
+        {{- end }}
+        {{- if .Lastmod}}
+          'pageModifiedDate': '{{ .Lastmod.Format "01-02-2006"  }}',
+        {{- end }}
+        {{- if eq .Kind "page" }}
+          'pageReadingTimeMinutes': {{ .ReadingTime }},
+          'pageReadingTimeSeconds': {{- $readTime := mul (div (countwords .Content) 220.0) 60 }}{{- math.Round $readTime}},
+          'pageWordCount': {{- .WordCount }},
+          'pageFuzzyWordCount': {{- .FuzzyWordCount }},
+          'pageKind': '{{ .Kind }}',
+          'pageId': '{{ with .File }}{{ .UniqueID }}{{ end }}',
+          'pageTitle': '{{ .LinkTitle }}',
+          'pagePermalink': '{{ .Permalink }}',
+          'pageType': '{{ .Type }}',
+          'pageTranslated': {{ .IsTranslated }},
+          {{- if .Params.author }}
+            'pageAuthor': '{{ if .Params.author -}}{{ .Params.author }}{{- else if .Site.Author.name -}}{{ .Site.Author.name }}{{- end }}',
+          {{- end }}
+          {{- if .Params.categories}}{{$category := index (.Params.categories) 0}}
+            'pageCategory':'{{ $category }}',
+          {{- end }}
+          {{- if .Params.tags}}
+            'pageTags':'{{ delimit .Params.tags "|" }}',
+          {{- end }}
+          {{- if .IsHome }}
+            'pageType2': 'home',
+          {{- else if eq .Kind "taxonomy" }}
+            'pageType2': 'tag',
+          {{- else if eq .Type "page" }}
+            'pageType2': 'page',
+          {{- else }}
+            'pageType2': 'post',
+          {{- end }}
+            'pageLanguage': '{{ .Language }}'
+        {{- end }}
       });
     </script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{ $.Site.Params.gtm.id }}');</script>
-    <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src =
+          "//{{ if .Site.Params.gtm_endpoint}}{{ .Site.Params.gtm_endpoint }}{{ else }}www.googletagmanager.com{{ end }}/gtm.js?id=" +
+          i +
+          dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "{{ .Site.Params.gtm.id }}");
+    </script>
   {{ end }}
 {{ end }}

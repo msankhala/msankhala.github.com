@@ -2,6 +2,7 @@
 title: "How to write custom views filter plugin to filter based on user zipcode"
 date: 2023-05-24T08:06:25+06:00
 description: How to write custom views filter plugin to filter based on user zipcode.
+author: Mahesh Sankhala
 # menu:
 #   sidebar:
 #     name: How to restore tmux lost session
