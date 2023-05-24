@@ -125,7 +125,7 @@ params:
 
     # Enable Analytics
     analytics:
-      enabled: true
+      enabled: false
       # Google Analytics
       google:
         id: G-H4LBG7NDFZ
@@ -191,3 +191,8 @@ params:
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
       enable: true
+
+  # Add gtm settings.
+  gtm:
+    enable: true
+    id: GTM-NKTRHCH

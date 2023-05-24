@@ -89,4 +89,12 @@
     {{- partial "misc/support.html" . -}}
 
   </body>
+  {{ if .Site.Params.gtm.enable }}
+    {{ if not (in (.Site.BaseURL | string) "localhost") }}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ $.Site.Params.gtm.id }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      {{ end }}
+  {{ end }}
 </html>
