@@ -1,5 +1,5 @@
 ---
-title: "How fix import error with current package relative import"
+title: "How to fix import error with current package relative import"
 date: 2023-09-05T08:06:25+06:00
 description: "How to fix ImportError attempted relative import with no known parent package"
 author: Mahesh Sankhala

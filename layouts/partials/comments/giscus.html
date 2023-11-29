@@ -1,0 +1,31 @@
+{{ with .giscus }}
+{{ $repo          := .repo }}
+{{ $repoID        := .repoID }}
+{{ $category      := .category | default "General" }}
+{{ $categoryID    := .categoryID }}
+{{ $theme         := .theme | default "light" }}
+{{ $map           := .map | default "url" }}
+{{ $reaction      := .reaction | default "1" }}
+{{ $metadata      := .metadata | default "0" }}
+{{ $inputPosition := .inputPosition | default "bottom" }}
+{{ $crossOrigin   := .crossOrigin | default "anonymous" }}
+
+<script src="https://giscus.app/client.js"
+  data-repo="{{ $repo }}"
+  data-repo-id="{{ $repoID }}"
+  data-category="{{ $category }}"
+  data-category-id="{{ $categoryID }}"
+  data-mapping="{{ $map }}"
+  data-reactions-enabled="{{ $reaction }}"
+  data-emit-metadata="{{ $metadata }}"
+  data-input-position="{{ $inputPosition }}"
+  data-theme="{{ $theme }}"
+  data-lang="{{ .Site.Language.Lang }}"
+  crossorigin="{{ $crossOrigin }}"
+  async>
+</script>
+<div class="giscus-alternative">
+  <strong>Alternatively, you can comment on the <a href="https://github.com/msankhala/msankhala.github.com/discussions/categories/general">GitHub Discussion</a> directly. Go to github discussion and select the correct discussion for this post and comment it there. The comment will start appearing here.</strong>
+</div>
+{{ end }}
+

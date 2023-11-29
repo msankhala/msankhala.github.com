@@ -95,9 +95,9 @@ params:
 
     # Enable comment feature. There, should be only one of them.
     comment:
-      enable: false
-      disqus:
-        shortName: toha-example-site
+      enable: true
+      # disqus:
+      #   shortName: toha-example-site
       # valine:
       #   appId: HTV6askWxVo3vOxlqjjaq2hd-MsYXbMMI
       #   appKey: pVrT3C85KGIuk27t07eh6bUC
@@ -116,7 +116,7 @@ params:
         category: General
         categoryID: DIC_kwDOACgys84CbWun
         theme: light
-        map: url
+        map: title
         reaction: 1
         metadata: 1
         inputPosition: top
